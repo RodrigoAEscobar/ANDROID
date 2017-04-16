@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PetRec</string>
+    <string name="My_Pets">My Pets</string>
+    <string name="about">About</string>
+    <string name="close">Close</string>
+    <string name="registration">Registration</string>
+    <string name="pet_details">View Pet Details</string>
+    <string name="edit_a_pet">Edit Pet Info</string>
+    <string name="delete_a_pet">Delete Pet Info.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="View_a_Pet">View A Pet</string>
+    <string name="Records">Records</string>
+    <string name="Add_A_Record">Add A Record</string>
+    <string name="add_a_record">Add A Record</string>
+    <string name="Delete_A_Record">Delete A Record</string>
+    <string name="View_A_Record">View A Record</string>
+    <string name="Edit_A_Record">Edit A Record</string>
+    <string name="search_by_date">Search By Date</string>
+    <string name="search">Search</string>
+    <string name="Search">Search Records</string>
+    <string name="Search_A_Record">Search Records</string>
+    <string name="selectdate">Select Date</string>
+</resources>

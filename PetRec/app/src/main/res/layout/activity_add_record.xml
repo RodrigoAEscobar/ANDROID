@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/add_record_cancel_imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="38dp"
+        android:src="@drawable/cancel_button" />
+
+    <ImageButton
+        android:id="@+id/add_record_save_imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/add_record_cancel_imageButton"
+        android:layout_gravity="right"
+        android:layout_marginLeft="520dp"
+        android:layout_marginStart="45dp"
+        android:layout_toEndOf="@+id/add_record_cancel_imageButton"
+        android:src="@drawable/save_button" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="Add A Record"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#02497b"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView20"
+        android:nextFocusDown="@+id/add_record_date_editText"
+        android:text="Visit Reason:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/delete_record_reason_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_record_date_editText"
+        android:layout_alignParentStart="true"
+        android:nextFocusDown="@+id/add_record_date_editText"
+        android:text="Date:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/add_record_date_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delete_record_reason_editText"
+        android:layout_toEndOf="@+id/textView22"
+        android:ems="10"
+        android:inputType="date"
+        android:nextFocusDown="@+id/add_record_diagnostic_editText"
+        android:text="    /    /    "
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add_record_date_editText"
+        android:text="Diagnostic:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/add_record_diagnostic_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_record_cost_editText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView23"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:nextFocusDown="@+id/add_record_cost_editText"
+        android:textAlignment="viewStart" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/delete_record_vet_name_editText"
+        android:text="Cost:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/add_record_cost_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/delete_record_vet_name_editText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:nextFocusDown="@+id/add_record_cost_editText"
+        android:text="$" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_record_cancel_imageButton"
+        android:layout_alignParentStart="true"
+        android:text="Vet. Name:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/delete_record_vet_name_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView23"
+        android:nextFocusDown="@+id/add_record_save_imageButton" />
+</RelativeLayout>

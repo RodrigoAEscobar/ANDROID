@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rodrigoescobar.www.petrec.MainActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="VIEW A RECORD"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#02497b"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView8"
+        android:nextFocusDown="@+id/view_record_date_editText"
+        android:text="Visit Reason: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/view_record_reason_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView22"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_record_date_editText"
+        android:layout_alignParentStart="true"
+        android:nextFocusDown="@+id/view_record_date_editText"
+        android:text="Date: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/view_record_date_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView22"
+        android:ems="10"
+        android:inputType="date"
+        android:nextFocusDown="@+id/view_record_diagnostic_editText"
+        android:text="    /    /    "
+        android:textAlignment="textStart"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view_record_date_editText"
+        android:text="Diagnostic:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/view_record_diagnostic_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_record_cost_editText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView23"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:nextFocusDown="@+id/view_record_cost_editText"
+        android:textAlignment="viewStart"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_record_vet_name_editText"
+        android:text="Cost:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/view_record_cost_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView24"
+        android:layout_alignEnd="@+id/view_record_diagnostic_editText"
+        android:layout_alignStart="@+id/view_record_vet_name_editText"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:nextFocusDown="@+id/view_record_cost_editText"
+        android:text="$"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_record_cancel_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:text="Vet. Name:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/view_record_vet_name_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView22"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/view_record_cancel_button"
+        style="@style/MyActionButtonOverflow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#f78383"
+        android:backgroundTintMode="src_over"
+        android:text="CLOSE"
+        android:textColor="#5e0202"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

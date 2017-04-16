@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rodrigoescobar.www.petrec">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" />
+
+        // New Activity Registration
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/registration"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.www.petrec.RegistrationActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity My Pets
+        <activity
+            android:name=".MyPets"
+            android:label="@string/My_Pets"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.www.petrec.MyPets" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity View a Pet
+        <activity
+            android:name=".View_A_Pet"
+            android:label="@string/View_a_Pet"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.www.petrec.View_A_Pet" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity Edit A Pet
+        <activity
+            android:name=".Edit_A_Pet"
+            android:label="@string/edit_a_pet"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.www.petrec.Edit_A_Pet" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity Delete A Pet
+        <activity
+            android:name=".Delete_A_Pet"
+            android:label="@string/delete_a_pet"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.www.petrec.Delete_A_Pet" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity Records
+        <activity
+            android:name=".Records"
+            android:label="@string/Records"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.www.petrec.Records" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity Add A Record
+        <activity
+            android:name=".Add_A_Record"
+            android:label="@string/Add_A_Record"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.www.petrec.Add_A_Record" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity Delete A Record
+        <activity
+            android:name=".Delete_A_Record"
+            android:label="@string/Delete_A_Record"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.www.petrec.Delete_A_Record" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity View A Record
+        <activity
+            android:name=".View_A_Record"
+            android:label="@string/View_A_Record"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.www.petrec.View_A_Record" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity Edit A Record
+        <activity
+            android:name=".Edit_A_Record"
+            android:label="@string/Edit_A_Record"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.www.petrec.Edit_A_Record" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity Search Records
+        <activity
+            android:name=".Search_For_A_Record"
+            android:label="@string/Search_A_Record"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.www.petrec.Search_For_A_Record" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
