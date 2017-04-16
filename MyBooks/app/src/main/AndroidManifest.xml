@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rodrigoescobar.mybooks">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        // Menu Activity
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                // Changed to default so it doesn't start first
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity Splash
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                // Changed to Launcher so it will show at app launch
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        // New Activity Add A Book
+        <activity
+            android:name=".Add_A_Book"
+            android:label="@string/add_a_book"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.mybooks.Add_A_Book" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity List Books
+        <activity
+            android:name=".View_My_Books"
+            android:label="@string/view_my_Books"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.mybooks.View_My_Books" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity View A Book
+        <activity
+            android:name=".View_A_Book"
+            android:label="@string/view_a_Book"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.mybooks.View_A_Book" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity Edit A Book
+        <activity
+            android:name=".Edit_A_Book"
+            android:label="@string/edit_a_book"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.mybooks.Edit_A_Book" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity Delete A Book
+        <activity
+            android:name="Delete_A_Book"
+            android:label="@string/delete_a_book"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.mybooks.Delete_A_Book" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        // New Activity Search For A Book
+        <activity
+            android:name="Search_For_A_Book"
+            android:label="@string/search_for_a_book"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.rodrigoescobar.mybooks.Search_For_A_Book" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+</manifest>

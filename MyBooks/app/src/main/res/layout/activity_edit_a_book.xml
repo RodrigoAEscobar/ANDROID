@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/edit_a_book"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/signatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/signature"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#0c72f7" />
+
+    <TextView
+        android:id="@+id/title_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/edit_Title_EditText"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/author_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title_TextView"
+        android:layout_marginTop="27dp"
+        android:text="@string/author"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/description_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/author_textView"
+        android:layout_marginTop="30dp"
+        android:text="@string/description"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/edit_Title_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edit_ISBN_EditText"
+        android:layout_alignStart="@+id/edit_Author_EditText"
+        android:layout_below="@+id/textView4"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edit_Author_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/description_TextView"
+        android:layout_alignEnd="@+id/edit_ISBN_EditText"
+        android:layout_toEndOf="@+id/description_TextView"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edit_Description_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/description_TextView"
+        android:layout_toEndOf="@+id/description_TextView"
+        android:height="100sp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/edit_ISBN_EditText"
+        android:text="@string/isbn"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/edit_ISBN_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edit_Description_EditText"
+        android:layout_below="@+id/edit_Description_EditText"
+        android:layout_marginTop="28dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="25dp"
+        android:text="@string/price"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/edit_Price_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignStart="@+id/edit_ISBN_EditText"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edit_Year_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edit_Price_EditText"
+        android:layout_below="@+id/edit_Price_EditText"
+        android:layout_marginTop="24dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/edit_Year_EditText"
+        android:text="@string/year"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/save_Edit_Button_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signatureTextView"
+        android:layout_toEndOf="@+id/author_textView"
+        android:text="@string/save"
+        android:textColor="#095002"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/edit_Cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edit_Year_EditText"
+        android:layout_alignTop="@+id/save_Edit_Button_Button"
+        android:layout_marginRight="37dp"
+        android:text="@string/cancel"
+        android:textColor="#f70824"
+        android:textSize="15dp" />
+</RelativeLayout>

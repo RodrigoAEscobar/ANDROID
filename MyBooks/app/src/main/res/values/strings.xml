@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">My Books</string>
+    <string name="main_Menu_Title">Main Menu</string>
+    <string name="add_a_book">Add a Book</string>
+    <string name="list_books">List Books</string>
+    <string name="view_a_book">View a Book</string>
+    <string name="edit_a_book">Edit a Book</string>
+    <string name="delete_a_book">Delete a Book</string>
+    <string name="search_for_a_book">Search for a Book</string>
+    <string name="signature">By: Rodrigo Escobar</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="delete_title">Delete Title</string>
+    <string name="add_title">Add Title</string>
+    <string name="save">Save</string>
+    <string name="title">Title :</string>
+    <string name="author">Author :</string>
+    <string name="description">Description :</string>
+    <string name="isbn">ISBN-10 :</string>
+    <string name="price">Price :</string>
+    <string name="year">Year :</string>
+    <string name="noData">There is no books in the data base.</string>
+    <string name="view_my_Books">View My Books</string>
+    <string name="viewABook">View A Book</string>
+    <string name="view_a_Book">View A Book</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="book_details">See Book Details</string>
+    <string name="edit_a_Book">Edit This Book</string>
+    <string name="delete_a_Book">Delete This Book</string>
+    <string name="alert">ALERT!</string>
+    <string name="delete_question">Do you want to delete?</string>
+    <string name="options_menu">options_menu</string>
+    <string name="close">Close</string>
+    <string name="about">About</string>
+</resources>
